@@ -40,6 +40,32 @@ body {
   top: 0;
 }
 
+/* Para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  /* Mudar texto do front__text-hover */
+  .front__text-hover {
+    content: "Toque para me encontrar";
+  }
+
+  /* Inverter o card ao ser clicado */
+  .card:active .card__inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Para desktops */
+@media only screen and (min-width: 601px) {
+  /* Mudar texto do front__text-hover */
+  .front__text-hover {
+    content: "Passe o mouse";
+  }
+
+  /* Inverter o card ao passar o mouse */
+  .card:hover .card__inner {
+    transform: rotateY(180deg);
+  }
+}
+
 .front,
 .back {
   position: relative;
