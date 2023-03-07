@@ -31,34 +31,16 @@ body {
   transform-style: preserve-3d;
 }
 
-/* muda o texto do span em dispositivos móveis */
-@media (max-width: 767px) {
-  .front__text-hover {
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: #fff;
-    cursor: pointer;
-  }
+/* adiciona a animação ao clicar no cartão */
+.outer-div:hover .inner-div,
+.outer-div:focus .inner-div,
+.outer-div:active .inner-div {
+  transform: rotateY(180deg);
+}
 
-  .outer-div:hover .front__text-hover {
-    display: none;
-  }
-
-  .outer-div:focus .front__text-hover {
-    display: none;
-  }
-
-  .outer-div:active .front__text-hover {
-    display: none;
-  }
-
-  .outer-div.mobile-flip .inner-div {
-    transform: rotateY(180deg);
-  }
+.inner-div:hover .social-icon {
+  opacity: 1;
+  top: 0;
 }
 
 .front,
