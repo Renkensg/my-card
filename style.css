@@ -31,12 +31,12 @@ body {
   transform-style: preserve-3d;
 }
 
-/* adiciona a animação ao clicar no cartão */
+/* adiciona a animação ao clicar no cartão
 .outer-div:hover .inner-div,
 .outer-div:focus .inner-div,
 .outer-div:active .inner-div {
   transform: rotateY(180deg);
-}
+} */
 
 .inner-div:hover .social-icon {
   opacity: 1;
@@ -44,7 +44,7 @@ body {
 }
 
 /* Propriedades para a classe is-flipped */
-.is-flipped {
+.rotate {
   transform: rotateY(180deg);
 }
 
