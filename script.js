@@ -20,7 +20,7 @@ function restoreInnerDiv() {
 
 outerDiv.addEventListener('mouseenter', rotateInnerDiv);
 outerDiv.addEventListener('mouseleave', restoreInnerDiv);
-outerDiv.addEventListener('touch', function() {
+outerDiv.addEventListener('click', function() {
   if (innerDiv.style.transform === 'rotateY(180deg)') {
     restoreInnerDiv();
   } else {
