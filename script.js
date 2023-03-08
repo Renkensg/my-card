@@ -7,7 +7,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 // Adiciona o texto e o listener de evento de acordo com o tipo de dispositivo
 if (isMobile) {
-  frontTextHover.textContent = 'Toque no card';
+  frontTextHover.textContent = 'Toque para me encontrar';
 }
 
 function rotateInnerDiv() {
