@@ -10,18 +10,21 @@ if (isMobile) {
   frontTextHover.textContent = 'Toque para me encontrar';
 }
 
-outerDiv.addEventListener('mouseover', function() {
-  innerDiv.classList.add('rotate');
-});
+function rotateInnerDiv() {
+  innerDiv.style.transform = 'rotateY(180deg)';
+}
 
-outerDiv.addEventListener('touch', function() {
-  innerDiv.classList.add('rotate');
-});
+function restoreInnerDiv() {
+  innerDiv.style.transform = 'none';
+}
 
-outerDiv.addEventListener('blur', function() {
-  innerDiv.classList.remove('rotate');
-});
-
-outerDiv.addEventListener('mouseout', function() {
-  innerDiv.classList.remove('rotate');
+outerDiv.addEventListener('mouseenter', rotateInnerDiv);
+outerDiv.addEventListener('mouseleave', restoreInnerDiv);
+outerDiv.addEventListener('click', rotateInnerDiv);
+outerDiv.addEventListener('touchstart', function() {
+  if (innerDiv.style.transform === 'rotateY(180deg)') {
+    restoreInnerDiv();
+  } else {
+    rotateInnerDiv();
+  }
 });
