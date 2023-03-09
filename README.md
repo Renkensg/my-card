@@ -2,13 +2,17 @@
 
 [🔗 Clique aqui para acessar](https://my-card-delta.vercel.app/)
 
-![Front of card](my-card.png)
-![Back of card](my-card-back.png)
+## 📱 Mobile
+![Mobile](touch-my-card.gif)
+
+## 💻 Desktop
+![Desktop](hover-my-card.gif)
 
 ## 🤖 Tecnologias
 
 - HTML
 - CSS
+- JavaScript
 - Git e GitHub
 
 ## 📩 Contato
